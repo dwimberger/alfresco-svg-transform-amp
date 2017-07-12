@@ -1,0 +1,5 @@
+var renderingEngineName = 'reformat';
+var renditionDefinitionName = 'cm:htmlRenditionDef';
+var renditionDef = renditionService.createRenditionDefinition(renditionDefinitionName, renderingEngineName);
+renditionDef.parameters['mime-type'] = 'image/png';
+var pngRendition= renditionService.render(document, renditionDef);
